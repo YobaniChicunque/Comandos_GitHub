@@ -1,0 +1,63 @@
+COMANDOS GITHUB
+
+______________________________________
+Crear un nuevo repositorio en la línea de comando. 
+Es decir en una terminal Command Prompt(cmd).
+
+git init
+git config --global user.email "you@example.com" (Si ya agregaste esta credencial web de GitHub en tu pc puedes omitir esta linea)
+git config --global user.name "Your Name" (Si ya agregaste esta credencial web de GitHub en tu pc puedes omitir esta linea)
+git add . 
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/YobaniChicunque/prueba.git
+git push -u origin main
+______________________________________
+…o inserte un repositorio existente desde la línea de comando
+
+git remote add origin https://github.com/YobaniChicunque/prueba.git
+git branch -M main
+git push -u origin main
+______________________________________
+...Agregar cambios 
+
+git add .
+git commit -m "Nuevos cambios"
+git push
+______________________________________
+...Bajar cambios
+
+git pull
+______________________________________
+...Clonar un repositoiro
+
+Abrir la ventana de Ventata de PowerShell (presion shitf+clic derecho, para abrir la ventata de PowerShell)
+
+git clone https://github.com/YobaniChicunque/prueba.git
+______________________________________
+...Crear un entorno virtual en un proyecto de Python.
+Nota Antes de ejecutar estos comandos en la terminal Command Prompt(cmd), es necesario instalar Python en nuestro PC.
+
+python -m venv env
+env\scripts\activate
+pip install -r requirements.txt
+python app.py
+________________________________________________
+NOTAS IMPORTANTES
+
+Nota1: antes de ejecutar estos comandos, 
+instalar Git en nuestro PC.
+
+Nota2: Recuerda agregar una credencial web de github
+en tu pc, o bien quitar las credenciales de otro usuario y agregar tus credenciales
+de lo contraio no podrias subir tu proyecto a git, ni  tampoco subir y bajar los cambios
+
+Nota3: Para verficar si un programa esta instalado ejecuta los siguientes comandos en la terminal Command Prompt(cmd)
+Ejemplos:
+
+python --version
+git --version
+node --version
+
+Si el programa esta instalado te deberia mostrar el nombre
+del programa y la version instalada.
